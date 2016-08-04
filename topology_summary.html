@@ -1,0 +1,1048 @@
+
+    {% extends "empire/index.html" %}
+    {% block selected_scaling %}class="current"{% endblock %}
+    {% block page_content %}
+    <div class="content">
+    <script type="text/javascript">
+        function swap(targetId){
+          if (document.getElementById){
+            target = document.getElementById(targetId);
+            if (target.style.display == "none"){
+                target.style.display = "";
+            } else{
+                target.style.display = "none";
+            }
+        }
+    }
+    </script>
+    <title>
+    Summary
+    </title>
+    </head>
+    <body style="padding:10">
+    <style>
+
+    .center {
+        margin: auto;
+        width: 50%;
+    }
+    pre{
+        padding-left: 140px;
+        color: #59b4a1;
+        font-size: 150%;
+        font-family: monospace;
+        }
+    </style>
+    <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    
+        <div class="filters">
+          <table>
+            <tr>
+                <th>
+                    <div class="dropdown cf">
+                        <a href="#">Topology Navigation: <span id="drop_metric" class="current">Summary</span></a>
+                        <div>
+                            <a class="icosolo icon_arrow_down" href="#"></a>
+                            <ul>
+                                    <li><a href="/empire/topology_dashboard">Dashboard</a></li><li><a href="/empire/topology_summary">Summary</a></li><li><a href="/empire/topology_optimization">Optimization</a></li><li><a href="/empire/topology_listing">Topology Listing</a></li>
+                            </ul>
+                       </div>
+                   </div>
+               </th>
+           </table>
+    </div>
+<div class="page_title">Summary Listing</div>
+<HR> <p1 style="margin-left: 8px" >Report generated on: Thu Aug  4 13:46:38 2016</p1 >
+<br> <p1 style="margin-left: 8px" >Using repository: git://git-nos.rose.rdlabs.hpecorp.net/hpe/hpe-enterprise-tests</p1 >
+<br> <p1 style="margin-left: 8px" >Using repository: https://git.openswitch.net/openswitch/ops-build</p1 >
+<br> <p1 style="margin-left: 8px" >Total test file count: 603</p1 >
+<br> <p1 style="margin-left: 8px" >Total test count: 729</p1 >
+<br>
+<HR><h2 style="margin-left: 8px" > Top 3 Most Common Topologies</h2>
+<HR><h3 style="margin-left: 8px" > Topology name: 1sw_0ixia_0link_0host</h3>
+<br><pre><p5> +-------+
+</p5></pre><pre><p5> |       |
+</p5></pre><pre><p5> |  sw1  |
+</p5></pre><pre><p5> |       |
+</p5></pre><pre><p5> +-------+
+</p5></pre>
+<br> <p1 style="margin-left: 8px" >Switch count: 1</p1 >
+<br> <p1 style="margin-left: 8px" >Ixia count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Link count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >VM count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Test file count: 126</p1 >
+<br>
+<br>
+        <div class="tab" id="navigation">
+                <a href="#" class="button" onclick="swap('test273');return false;">
+    Show test files:
+            </a>
+            <div class ="tab" id="test273" style="display: none;">
+        Testname: test_vtysh_ct_intervlan.py
+<br>Testname: test_vland.py
+<br>Testname: test_vtysh_ct_vlan.py
+<br>Testname: test_vtysh_ct_vlan_internal.py
+<br>Testname: test_ct_snmp_functionality.py
+<br>Testname: test_vtysh_ct_snmp.py
+<br>Testname: test_pmd.py
+<br>Testname: test_ft_dom.py
+<br>Testname: test_switchd_opennsl_ct_ospf.py
+<br>Testname: test_switchd_opennsl_ct_sflow.py
+<br>Testname: test_switchd_opennsl_ct_qos.py
+<br>Testname: test_switchd_opennsl_ct_intervlan.py
+<br>Testname: test_switchd_opennsl_ct_ecmp_hash.py
+<br>Testname: test_switchd_opennsl_ct_subinterface_switching_traffic.py
+<br>Testname: test_fand_ct_fan.py
+<br>Testname: test_passwd_srv_ct_sys_checking.py
+<br>Testname: test_powerd_ct_powersupply.py
+<br>Testname: test_switchd_container_ct_sflow.py
+<br>Testname: test_switchd_container_ct_switchd_restartability.py
+<br>Testname: test_switchd_container_ct_changing_vlan_config.py
+<br>Testname: test_ct_ntp_config.py
+<br>Testname: test_dhcp_tftp_ct_dameon_leases.py
+<br>Testname: test_vtysh_ct_dhcp_tftp.py
+<br>Testname: test_vtysh_ct_lldp.py
+<br>Testname: test_vtysh_ct_proxy_arp.py
+<br>Testname: test_vtysh_ct_bgp_ip_prefix_cli.py
+<br>Testname: test_vtysh_ct_bgp_redistribute.py
+<br>Testname: test_vtysh_ct_intf_cli.py
+<br>Testname: test_vtysh_ct_ospf.py
+<br>Testname: test_vtysh_ct_cli_infra.py
+<br>Testname: test_vtysh_ct_domainname.py
+<br>Testname: test_vtysh_ct_sub_intf_cli.py
+<br>Testname: test_vtysh_ct_db.py
+<br>Testname: test_vtysh_ct_show_version.py
+<br>Testname: test_vtysh_ct_show_version_detail.py
+<br>Testname: test_vtysh_ct_logrotate.py
+<br>Testname: test_vtysh_ct_bgp_community_list.py
+<br>Testname: test_vtysh_ct_bgp_router_cli.py
+<br>Testname: test_vtysh_ct_config.py
+<br>Testname: test_vtysh_ct_vrf.py
+<br>Testname: test_vtysh_ct_hostname.py
+<br>Testname: test_vtysh_ct_loopback_intf_cli.py
+<br>Testname: test_vtysh_ft_audit_log.py
+<br>Testname: test_ft_logrotate.py
+<br>Testname: test_passwd_srv_ft_update_passwd.py
+<br>Testname: test_led_ct_led.py
+<br>Testname: test_sftp_ct_aaautils.py
+<br>Testname: test_vtysh_ct_aaa.py
+<br>Testname: test_cfgdbutil.py
+<br>Testname: test_cfgd.py
+<br>Testname: test_cfgd_ft_copy_on_reboot.py
+<br>Testname: test_lacpd_ct_system_priority_bugs.py
+<br>Testname: test_lacpd_ct_vtysh_fallback_timeout.py
+<br>Testname: test_lacpd_ct_vtysh_fallback_mode.py
+<br>Testname: test_lacp_vtysh_ct_split_interface.py
+<br>Testname: test_ft_lag_dynamic_move_interfaces.py
+<br>Testname: test_ft_lag_unsupported_names.py
+<br>Testname: test_ft_lag_static_move_interaces.py
+<br>Testname: test_supportability_ct_diag_dump.py
+<br>Testname: test_supportability_ct_show_tech.py
+<br>Testname: test_supportability_ft_subintf_lpbk.py
+<br>Testname: test_supportability_ft_logging.py
+<br>Testname: test_supportability_ft_eventlog.py
+<br>Testname: test_supportability_ft_show_vlog.py
+<br>Testname: test_supportability_ft_show_vlog_config.py
+<br>Testname: test_restd_ct_restd_conn.py
+<br>Testname: test_restd_ct_config_persistence.py
+<br>Testname: test_lldpd_ct_call_libevent_test.py
+<br>Testname: test_qos_ct_rest_custom_validators.py
+<br>Testname: test_classifierd_ct_acl_create_delete.py
+<br>Testname: test_classifierd_ct_ace_apply.py
+<br>Testname: test_copp_cli.py
+<br>Testname: test_classifierd_ct_ace_parameters.py
+<br>Testname: test_mirror_ct_cli.py
+<br>Testname: test_mirror_ct_rest_custom_validators.py
+<br>Testname: test_qos_ct_cli.py
+<br>Testname: test_classifierd_ft_ace_apply.py
+<br>Testname: test_qos_ft.py
+<br>Testname: test_classifierd_ft_ace_parameters.py
+<br>Testname: test_classifierd_ft_acl_create_delete.py
+<br>Testname: test_sysd_ct_show_version_detail.py
+<br>Testname: test_sysd_ct_hw_desc_files.py
+<br>Testname: test_sysd_ct_os_release.py
+<br>Testname: test_sysd_ct_image_manifest_file.py
+<br>Testname: test_vtysh_ft_show_version_detail.py
+<br>Testname: test_mac_learning_show_ct.py
+<br>Testname: test_checkmk_ct.py
+<br>Testname: test_bgp_ct_active_router_id.py
+<br>Testname: test_bgp_ct_routemap_match_commit.py
+<br>Testname: test_ospfv2_ct_verify_tcpport_closed.py
+<br>Testname: test_zebra_ct_verify_tcpport_closed.py
+<br>Testname: test_zebra_ct_active_router_id.py
+<br>Testname: test_zebra_ct_diagnostics.py
+<br>Testname: test_intfd_ct_show_interface_lag.py
+<br>Testname: test_user_config_qsfp_splitter.py
+<br>Testname: test_intfd_ct_lacp.py
+<br>Testname: test_intfd_ct_shutdown.py
+<br>Testname: test_intfd_ct_no_interface_lag.py
+<br>Testname: test_user_config_autoneg.py
+<br>Testname: test_pm_info_detect.py
+<br>Testname: test_user_configuration.py
+<br>Testname: test_fixed_1g_fixed_ports.py
+<br>Testname: test_intfd_ct_interface_split_with_lag.py
+<br>Testname: test_intfd_ct_lag.py
+<br>Testname: test_daemon_ct_dhcp_relay.py
+<br>Testname: test_vtysh_ct_dhcp_relay.py
+<br>Testname: test_vtysh_ct_traceroute.py
+<br>Testname: test_vtysh_ct_sftp.py
+<br>Testname: test_vtysh_ct_ping.py
+<br>Testname: test_udp_bcast_forwarder_daemon_ct.py
+<br>Testname: test_vtysh_ct_source_interface_selection.py
+<br>Testname: test_vtysh_ct_udp_forwarder.py
+<br>Testname: test_vtysh_ct_sftp_client.py
+<br>Testname: test_tempd_ct_tempsensor.py
+<br>Testname: test_portd_ct_functionality.py
+<br>Testname: test_portd_ct_lpbk_subif_test_cases.py
+<br>Testname: test_BasicL3_RoutingConfigMaxStaticRoutesIPv4.py
+<br>Testname: test_BasicL3_RoutingConfigMaxStaticRoutesIPv6.py
+<br>Testname: test_BGP_DeleteNetwork.py
+<br>Testname: test_Ping_PingToNonExistingIp.py
+<br>Testname: test_Ping_PingToBroadcastAddress.py
+<br>Testname: test_Ping6_Ping6ToNonExistingIp.py
+<br>Testname: test_Vlan_ConfigurationPersistenceCheck.py
+<br>Testname: test_Vlan_RapidCreateDeleteTrunkAndAccessVlans.py
+<br>Testname: test_Jumboframe_RapidConfigUnconfigMtu.py
+<br>Testname: test_Logging_CfgPersistence.py
+<br>
+        </div>
+        </div>
+    
+<HR><h3 style="margin-left: 8px" > Topology name: 1sw_0ixia_1link_1host</h3>
+<br><pre><p5> +-------+
+</p5></pre><pre><p5> |       |     +-------+
+</p5></pre><pre><p5> |  hs1  <----->  sw1  |
+</p5></pre><pre><p5> |       |     +-------+
+</p5></pre><pre><p5> +-------+
+</p5></pre>
+<br> <p1 style="margin-left: 8px" >Switch count: 1</p1 >
+<br> <p1 style="margin-left: 8px" >Ixia count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Link count: 1</p1 >
+<br> <p1 style="margin-left: 8px" >VM count: 1</p1 >
+<br><blockquote> <p1 style="margin-left: 8px" >Host [Ubuntu]: 54</p1 >
+<br></blockquote> <p1 style="margin-left: 8px" >Test file count: 54</p1 >
+<br>
+<br>
+        <div class="tab" id="navigation">
+                <a href="#" class="button" onclick="swap('test274');return false;">
+    Show test files:
+            </a>
+            <div class ="tab" id="test274" style="display: none;">
+        Testname: test_ft_vlan_id_validation.py
+<br>Testname: test_ft_vlan_state_transition.py
+<br>Testname: test_switchd_opennsl_ct_loopback.py
+<br>Testname: test_dhcp_tftp_server_ft.py
+<br>Testname: test_vtysh_ct_system.py
+<br>Testname: test_vtysh_ct_tempsensor.py
+<br>Testname: test_vtysh_ct_led.py
+<br>Testname: test_vtysh_ct_fan.py
+<br>Testname: test_vtysh_ct_db_intf.py
+<br>Testname: test_vtysh_ct_ecmp_cli.py
+<br>Testname: test_supportability_ft_core_dump.py
+<br>Testname: test_ops-restd_ft_auditlog.py
+<br>Testname: test_snmpwalk_ft_lldp.py
+<br>Testname: test_snmpget_ft_lldp.py
+<br>Testname: test_snmpbulkget_ft_lldp.py
+<br>Testname: test_snmpgetnext_ft_lldp.py
+<br>Testname: test_copp.py
+<br>Testname: test_vtysh_ct_system.py
+<br>Testname: test_bgp_ct_timers.py
+<br>Testname: test_bgp_ct_show_bgp_neighbors.py
+<br>Testname: test_bgp_ct_show_running_config.py
+<br>Testname: test_bgp_ct_router_bgp.py
+<br>Testname: test_bgp_ct_network_cfg.py
+<br>Testname: test_bgp_ct_router_id.py
+<br>Testname: test_portd_ct_inter_vlan_interface.py
+<br>Testname: test_portd_ct_admin_state.py
+<br>Testname: test_Loopback_DeleteMaxLoopbackIpv6Interfaces.py
+<br>Testname: test_Loopback_DeleteMaxLoopbackIpv4Interfaces.py
+<br>Testname: test_Loopback_IPv4InterfacesPingHost.py
+<br>Testname: test_Loopback_ConfigurationPersistenceMaxLoopbackTraffic.py
+<br>Testname: test_Loopback_MaxIPv4InterfacesConfigure.py
+<br>Testname: test_Loopback_MaxIpv6InterfacesConfigure.py
+<br>Testname: test_Loopback_IPv6Ping6Host.py
+<br>Testname: test_Subinterface_Ipv4MaxSubintsPerPhysicalInterface.py
+<br>Testname: test_Subinterface_Ipv6MaxSubintsPerPhysicalInterface.py
+<br>Testname: test_SftpServer_CfgPersistence.py
+<br>Testname: test_TFTP_MaxSimultaneousTFTP_Connections.py
+<br>Testname: test_AAA_MaximumRadiusConfigurationSupport.py
+<br>Testname: test_RBAC_netop_permissions_rest.py
+<br>Testname: test_RBAC_netop_password_rest.py
+<br>Testname: test_RBAC_admin_permissions_rest.py
+<br>Testname: test_NTPClient_AddEraseNTP.py
+<br>Testname: test_NTPClient_EnableDisableNTPAuthentication.py
+<br>Testname: test_SNMPInfra_MixGetOperations.py
+<br>Testname: test_REST_LoginManyTimesSameUserCredentials.py
+<br>Testname: test_REST_httpsCertificate.py
+<br>Testname: test_MgmtInterface_IPv4IPv6Interoperability.py
+<br>Testname: test_MgmtInterface_IPAddressAssignDynamically.py
+<br>Testname: test_MgmtInterface_IPv4AddressAssignStatically.py
+<br>Testname: test_MgmtInterface_IPv6AddressAssignStatically.py
+<br>Testname: test_MgmtInterface_IPAddressAssignInteroperability.py
+<br>Testname: test_MgmtInterface_LinkFlap.py
+<br>Testname: test_upgrade_downgrade_from_onie.py
+<br>Testname: test_upgrade_downgrade_from_bash.py
+<br>
+        </div>
+        </div>
+    
+<HR><h3 style="margin-left: 8px" > Topology name: 2sw_0ixia_1link_0host</h3>
+<br><pre><p5>      +-------+
+</p5></pre><pre><p5>      |       |
+</p5></pre><pre><p5>      |  sw1  |
+</p5></pre><pre><p5>      |       |
+</p5></pre><pre><p5>      +-------+
+</p5></pre><pre><p5>          |1
+</p5></pre><pre><p5>          |
+</p5></pre><pre><p5>          |1
+</p5></pre><pre><p5>      +-------+
+</p5></pre><pre><p5>      |  sw2  |
+</p5></pre><pre><p5>      |       |
+</p5></pre><pre><p5>      +-------+
+</p5></pre>
+<br> <p1 style="margin-left: 8px" >Switch count: 2</p1 >
+<br> <p1 style="margin-left: 8px" >Ixia count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Link count: 1</p1 >
+<br> <p1 style="margin-left: 8px" >VM count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Test file count: 36</p1 >
+<br>
+<br>
+        <div class="tab" id="navigation">
+                <a href="#" class="button" onclick="swap('test275');return false;">
+    Show test files:
+            </a>
+            <div class ="tab" id="test275" style="display: none;">
+        Testname: test_vrrp_enable_disable_ct.py
+<br>Testname: test_vrrp_enable_disable_ft.py
+<br>Testname: test_lldpd_ct_counters_recovery.py
+<br>Testname: test_lldp_ft_enable_disable.py
+<br>Testname: test_lldp_ft_wait_hold.py
+<br>Testname: test_bgp_ct_routemap_set_commit.py
+<br>Testname: test_bgp_ct_show_ip_bgp.py
+<br>Testname: test_bgp_ct_routemap.py
+<br>Testname: test_zebra_ct_cli_sorted_display.py
+<br>Testname: test_zebra_ct_cli_ipv4_static_routes.py
+<br>Testname: test_zebra_ct_cli_ipv6_static_routes.py
+<br>Testname: test_zebra_ct_fib_selection.py
+<br>Testname: test_ospfv2_ft_authentication.py
+<br>Testname: test_ospfv2_ft_best_route.py
+<br>Testname: test_bgp_ft_neighbor_password.py
+<br>Testname: test_bgp_ft_peergroup.py
+<br>Testname: test_bgp_ft_routemap_ipv6_next_hop.py
+<br>Testname: test_bgp_ft_routemap_origin.py
+<br>Testname: test_bgp_ft_routemap_metric.py
+<br>Testname: test_bgp_ft_ipv6_prefixlist.py
+<br>Testname: test_bgp_ft_routemap_set_commlist.py
+<br>Testname: test_bgp_ft_routemap_aspath.py
+<br>Testname: test_bgp_ft_prefix_list.py
+<br>Testname: test_bgp_ft_routemap.py
+<br>Testname: test_bgp_ft_routemap_atomic_aggregate.py
+<br>Testname: test_bgp_ft_no_neighbor.py
+<br>Testname: test_bgp_ft_routemap_probability.py
+<br>Testname: test_bgp_ft_basic_bgp_route_advertise.py
+<br>Testname: test_bgp_ft_routemap_weight.py
+<br>Testname: test_BGP_MaxRouteMapEntries.py
+<br>Testname: test_BGP_NeighborFilterIPv6PrefixList.py
+<br>Testname: test_BGP_MaxStaticRoutesRedist.py
+<br>Testname: test_BGP_MaxConnectedLoopbackRedistIPv4.py
+<br>Testname: test_BGP_NeighborFilterIPv4PrefixList.py
+<br>Testname: test_BGP_MaxConnectedLoopbackRedistIPv6.py
+<br>Testname: test_ospf_peer_adjacency.py
+<br>
+        </div>
+        </div>
+    
+<HR><h2 style="margin-left: 8px" > Top 3 Topologies with Most Switches</h2>
+<HR><h3 style="margin-left: 8px" > Topology name: 1sw_0ixia_0link_0host</h3>
+<br><pre><p5> +-------+
+</p5></pre><pre><p5> |       |
+</p5></pre><pre><p5> |  sw1  |
+</p5></pre><pre><p5> |       |
+</p5></pre><pre><p5> +-------+
+</p5></pre>
+<br> <p1 style="margin-left: 8px" >Switch count: 1</p1 >
+<br> <p1 style="margin-left: 8px" >Ixia count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Link count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >VM count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Test file count: 126</p1 >
+<br>
+<br>
+        <div class="tab" id="navigation">
+                <a href="#" class="button" onclick="swap('test276');return false;">
+    Show test files:
+            </a>
+            <div class ="tab" id="test276" style="display: none;">
+        Testname: test_vtysh_ct_intervlan.py
+<br>Testname: test_vland.py
+<br>Testname: test_vtysh_ct_vlan.py
+<br>Testname: test_vtysh_ct_vlan_internal.py
+<br>Testname: test_ct_snmp_functionality.py
+<br>Testname: test_vtysh_ct_snmp.py
+<br>Testname: test_pmd.py
+<br>Testname: test_ft_dom.py
+<br>Testname: test_switchd_opennsl_ct_ospf.py
+<br>Testname: test_switchd_opennsl_ct_sflow.py
+<br>Testname: test_switchd_opennsl_ct_qos.py
+<br>Testname: test_switchd_opennsl_ct_intervlan.py
+<br>Testname: test_switchd_opennsl_ct_ecmp_hash.py
+<br>Testname: test_switchd_opennsl_ct_subinterface_switching_traffic.py
+<br>Testname: test_fand_ct_fan.py
+<br>Testname: test_passwd_srv_ct_sys_checking.py
+<br>Testname: test_powerd_ct_powersupply.py
+<br>Testname: test_switchd_container_ct_sflow.py
+<br>Testname: test_switchd_container_ct_switchd_restartability.py
+<br>Testname: test_switchd_container_ct_changing_vlan_config.py
+<br>Testname: test_ct_ntp_config.py
+<br>Testname: test_dhcp_tftp_ct_dameon_leases.py
+<br>Testname: test_vtysh_ct_dhcp_tftp.py
+<br>Testname: test_vtysh_ct_lldp.py
+<br>Testname: test_vtysh_ct_proxy_arp.py
+<br>Testname: test_vtysh_ct_bgp_ip_prefix_cli.py
+<br>Testname: test_vtysh_ct_bgp_redistribute.py
+<br>Testname: test_vtysh_ct_intf_cli.py
+<br>Testname: test_vtysh_ct_ospf.py
+<br>Testname: test_vtysh_ct_cli_infra.py
+<br>Testname: test_vtysh_ct_domainname.py
+<br>Testname: test_vtysh_ct_sub_intf_cli.py
+<br>Testname: test_vtysh_ct_db.py
+<br>Testname: test_vtysh_ct_show_version.py
+<br>Testname: test_vtysh_ct_show_version_detail.py
+<br>Testname: test_vtysh_ct_logrotate.py
+<br>Testname: test_vtysh_ct_bgp_community_list.py
+<br>Testname: test_vtysh_ct_bgp_router_cli.py
+<br>Testname: test_vtysh_ct_config.py
+<br>Testname: test_vtysh_ct_vrf.py
+<br>Testname: test_vtysh_ct_hostname.py
+<br>Testname: test_vtysh_ct_loopback_intf_cli.py
+<br>Testname: test_vtysh_ft_audit_log.py
+<br>Testname: test_ft_logrotate.py
+<br>Testname: test_passwd_srv_ft_update_passwd.py
+<br>Testname: test_led_ct_led.py
+<br>Testname: test_sftp_ct_aaautils.py
+<br>Testname: test_vtysh_ct_aaa.py
+<br>Testname: test_cfgdbutil.py
+<br>Testname: test_cfgd.py
+<br>Testname: test_cfgd_ft_copy_on_reboot.py
+<br>Testname: test_lacpd_ct_system_priority_bugs.py
+<br>Testname: test_lacpd_ct_vtysh_fallback_timeout.py
+<br>Testname: test_lacpd_ct_vtysh_fallback_mode.py
+<br>Testname: test_lacp_vtysh_ct_split_interface.py
+<br>Testname: test_ft_lag_dynamic_move_interfaces.py
+<br>Testname: test_ft_lag_unsupported_names.py
+<br>Testname: test_ft_lag_static_move_interaces.py
+<br>Testname: test_supportability_ct_diag_dump.py
+<br>Testname: test_supportability_ct_show_tech.py
+<br>Testname: test_supportability_ft_subintf_lpbk.py
+<br>Testname: test_supportability_ft_logging.py
+<br>Testname: test_supportability_ft_eventlog.py
+<br>Testname: test_supportability_ft_show_vlog.py
+<br>Testname: test_supportability_ft_show_vlog_config.py
+<br>Testname: test_restd_ct_restd_conn.py
+<br>Testname: test_restd_ct_config_persistence.py
+<br>Testname: test_lldpd_ct_call_libevent_test.py
+<br>Testname: test_qos_ct_rest_custom_validators.py
+<br>Testname: test_classifierd_ct_acl_create_delete.py
+<br>Testname: test_classifierd_ct_ace_apply.py
+<br>Testname: test_copp_cli.py
+<br>Testname: test_classifierd_ct_ace_parameters.py
+<br>Testname: test_mirror_ct_cli.py
+<br>Testname: test_mirror_ct_rest_custom_validators.py
+<br>Testname: test_qos_ct_cli.py
+<br>Testname: test_classifierd_ft_ace_apply.py
+<br>Testname: test_qos_ft.py
+<br>Testname: test_classifierd_ft_ace_parameters.py
+<br>Testname: test_classifierd_ft_acl_create_delete.py
+<br>Testname: test_sysd_ct_show_version_detail.py
+<br>Testname: test_sysd_ct_hw_desc_files.py
+<br>Testname: test_sysd_ct_os_release.py
+<br>Testname: test_sysd_ct_image_manifest_file.py
+<br>Testname: test_vtysh_ft_show_version_detail.py
+<br>Testname: test_mac_learning_show_ct.py
+<br>Testname: test_checkmk_ct.py
+<br>Testname: test_bgp_ct_active_router_id.py
+<br>Testname: test_bgp_ct_routemap_match_commit.py
+<br>Testname: test_ospfv2_ct_verify_tcpport_closed.py
+<br>Testname: test_zebra_ct_verify_tcpport_closed.py
+<br>Testname: test_zebra_ct_active_router_id.py
+<br>Testname: test_zebra_ct_diagnostics.py
+<br>Testname: test_intfd_ct_show_interface_lag.py
+<br>Testname: test_user_config_qsfp_splitter.py
+<br>Testname: test_intfd_ct_lacp.py
+<br>Testname: test_intfd_ct_shutdown.py
+<br>Testname: test_intfd_ct_no_interface_lag.py
+<br>Testname: test_user_config_autoneg.py
+<br>Testname: test_pm_info_detect.py
+<br>Testname: test_user_configuration.py
+<br>Testname: test_fixed_1g_fixed_ports.py
+<br>Testname: test_intfd_ct_interface_split_with_lag.py
+<br>Testname: test_intfd_ct_lag.py
+<br>Testname: test_daemon_ct_dhcp_relay.py
+<br>Testname: test_vtysh_ct_dhcp_relay.py
+<br>Testname: test_vtysh_ct_traceroute.py
+<br>Testname: test_vtysh_ct_sftp.py
+<br>Testname: test_vtysh_ct_ping.py
+<br>Testname: test_udp_bcast_forwarder_daemon_ct.py
+<br>Testname: test_vtysh_ct_source_interface_selection.py
+<br>Testname: test_vtysh_ct_udp_forwarder.py
+<br>Testname: test_vtysh_ct_sftp_client.py
+<br>Testname: test_tempd_ct_tempsensor.py
+<br>Testname: test_portd_ct_functionality.py
+<br>Testname: test_portd_ct_lpbk_subif_test_cases.py
+<br>Testname: test_BasicL3_RoutingConfigMaxStaticRoutesIPv4.py
+<br>Testname: test_BasicL3_RoutingConfigMaxStaticRoutesIPv6.py
+<br>Testname: test_BGP_DeleteNetwork.py
+<br>Testname: test_Ping_PingToNonExistingIp.py
+<br>Testname: test_Ping_PingToBroadcastAddress.py
+<br>Testname: test_Ping6_Ping6ToNonExistingIp.py
+<br>Testname: test_Vlan_ConfigurationPersistenceCheck.py
+<br>Testname: test_Vlan_RapidCreateDeleteTrunkAndAccessVlans.py
+<br>Testname: test_Jumboframe_RapidConfigUnconfigMtu.py
+<br>Testname: test_Logging_CfgPersistence.py
+<br>
+        </div>
+        </div>
+    
+<HR><h3 style="margin-left: 8px" > Topology name: 2sw_0ixia_1link_0host</h3>
+<br><pre><p5>      +-------+
+</p5></pre><pre><p5>      |       |
+</p5></pre><pre><p5>      |  sw1  |
+</p5></pre><pre><p5>      |       |
+</p5></pre><pre><p5>      +-------+
+</p5></pre><pre><p5>          |1
+</p5></pre><pre><p5>          |
+</p5></pre><pre><p5>          |1
+</p5></pre><pre><p5>      +-------+
+</p5></pre><pre><p5>      |  sw2  |
+</p5></pre><pre><p5>      |       |
+</p5></pre><pre><p5>      +-------+
+</p5></pre>
+<br> <p1 style="margin-left: 8px" >Switch count: 2</p1 >
+<br> <p1 style="margin-left: 8px" >Ixia count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Link count: 1</p1 >
+<br> <p1 style="margin-left: 8px" >VM count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Test file count: 36</p1 >
+<br>
+<br>
+        <div class="tab" id="navigation">
+                <a href="#" class="button" onclick="swap('test277');return false;">
+    Show test files:
+            </a>
+            <div class ="tab" id="test277" style="display: none;">
+        Testname: test_vrrp_enable_disable_ct.py
+<br>Testname: test_vrrp_enable_disable_ft.py
+<br>Testname: test_lldpd_ct_counters_recovery.py
+<br>Testname: test_lldp_ft_enable_disable.py
+<br>Testname: test_lldp_ft_wait_hold.py
+<br>Testname: test_bgp_ct_routemap_set_commit.py
+<br>Testname: test_bgp_ct_show_ip_bgp.py
+<br>Testname: test_bgp_ct_routemap.py
+<br>Testname: test_zebra_ct_cli_sorted_display.py
+<br>Testname: test_zebra_ct_cli_ipv4_static_routes.py
+<br>Testname: test_zebra_ct_cli_ipv6_static_routes.py
+<br>Testname: test_zebra_ct_fib_selection.py
+<br>Testname: test_ospfv2_ft_authentication.py
+<br>Testname: test_ospfv2_ft_best_route.py
+<br>Testname: test_bgp_ft_neighbor_password.py
+<br>Testname: test_bgp_ft_peergroup.py
+<br>Testname: test_bgp_ft_routemap_ipv6_next_hop.py
+<br>Testname: test_bgp_ft_routemap_origin.py
+<br>Testname: test_bgp_ft_routemap_metric.py
+<br>Testname: test_bgp_ft_ipv6_prefixlist.py
+<br>Testname: test_bgp_ft_routemap_set_commlist.py
+<br>Testname: test_bgp_ft_routemap_aspath.py
+<br>Testname: test_bgp_ft_prefix_list.py
+<br>Testname: test_bgp_ft_routemap.py
+<br>Testname: test_bgp_ft_routemap_atomic_aggregate.py
+<br>Testname: test_bgp_ft_no_neighbor.py
+<br>Testname: test_bgp_ft_routemap_probability.py
+<br>Testname: test_bgp_ft_basic_bgp_route_advertise.py
+<br>Testname: test_bgp_ft_routemap_weight.py
+<br>Testname: test_BGP_MaxRouteMapEntries.py
+<br>Testname: test_BGP_NeighborFilterIPv6PrefixList.py
+<br>Testname: test_BGP_MaxStaticRoutesRedist.py
+<br>Testname: test_BGP_MaxConnectedLoopbackRedistIPv4.py
+<br>Testname: test_BGP_NeighborFilterIPv4PrefixList.py
+<br>Testname: test_BGP_MaxConnectedLoopbackRedistIPv6.py
+<br>Testname: test_ospf_peer_adjacency.py
+<br>
+        </div>
+        </div>
+    
+<HR><h3 style="margin-left: 8px" > Topology name: 2sw_2ixia_5link_0host</h3>
+<br><pre><p5>          +-----------------+
+</p5></pre><pre><p5>          |                 |
+</p5></pre><pre><p5>          |    IXIA port    |
+</p5></pre><pre><p5>          |                 |
+</p5></pre><pre><p5>          +-----------------+
+</p5></pre><pre><p5>                   |
+</p5></pre><pre><p5>                   |
+</p5></pre><pre><p5>    +-------------------------------+
+</p5></pre><pre><p5>    |                               |
+</p5></pre><pre><p5>    |                               |
+</p5></pre><pre><p5>    |            ops1               |
+</p5></pre><pre><p5>    |                               |
+</p5></pre><pre><p5>    +-------------------------------+
+</p5></pre><pre><p5>              |   |    |
+</p5></pre><pre><p5>              |   |    |
+</p5></pre><pre><p5>              |   |    |
+</p5></pre><pre><p5>              |   |    |
+</p5></pre><pre><p5>    +-------------------------------+
+</p5></pre><pre><p5>    |                               |
+</p5></pre><pre><p5>    |                               |
+</p5></pre><pre><p5>    |            ops2               |
+</p5></pre><pre><p5>    |                               |
+</p5></pre><pre><p5>    +-------------------------------+
+</p5></pre><pre><p5>                   |
+</p5></pre><pre><p5>                   |
+</p5></pre><pre><p5>           +-----------------+
+</p5></pre><pre><p5>           |                 |
+</p5></pre><pre><p5>           |    IXIA port    |
+</p5></pre><pre><p5>           |                 |
+</p5></pre><pre><p5>           +-----------------+
+</p5></pre>
+<br> <p1 style="margin-left: 8px" >Switch count: 2</p1 >
+<br> <p1 style="margin-left: 8px" >Ixia count: 2</p1 >
+<br> <p1 style="margin-left: 8px" >Link count: 5</p1 >
+<br> <p1 style="margin-left: 8px" >VM count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Test file count: 31</p1 >
+<br>
+<br>
+        <div class="tab" id="navigation">
+                <a href="#" class="button" onclick="swap('test278');return false;">
+    Show test files:
+            </a>
+            <div class ="tab" id="test278" style="display: none;">
+        Testname: test_ECMP_NextHopFailoverStaticRoutes.py
+<br>Testname: test_ECMP_MaxNextHopsSingleRouteStaticRoute.py
+<br>Testname: test_ECMP_NextHopFailoverBGP.py
+<br>Testname: test_ECMP_MaxNextHopsOverLAG.py
+<br>Testname: test_ECMP_MaxNextHopsMaxRoutesStaticRouteIPv6.py
+<br>Testname: test_ECMP_MaxNextHopsMaxRouteStaticRoute.py
+<br>Testname: test_ECMP_MaxNextHopsMaxRoutesOSPF.py
+<br>Testname: test_ECMP_MaxNextHopsSingleRouteStaticRouteIPv6.py
+<br>Testname: test_ECMP_MaxNextHopsSingleRouteBGP.py
+<br>Testname: test_ECMP_MaxNextHopsSingleRouteOSPF.py
+<br>Testname: test_ECMP_MaxNextHopsMaxRoutesBGP.py
+<br>Testname: test_ECMP_ReconvergenceTime.py
+<br>Testname: test_ECMP_NextHopFailoverOSPF.py
+<br>Testname: test_LACP_ChangeModeWithoutFallback.py
+<br>Testname: test_LinkAggregation_LACP_3PortFailuresSlowHeartbeat.py
+<br>Testname: test_LinkAggregation_LACP_L3IPv6Failover.py
+<br>Testname: test_LinkAggregation_LACP_AggKeySameSwLowPriority.py
+<br>Testname: test_LinkAggregation_LACP_LinkMigration.py
+<br>Testname: test_LinkAggregation_LACP_L3BGPIPv4.py
+<br>Testname: test_LinkAggregation_LACP_L3IPv4Failover.py
+<br>Testname: test_LinkAggregation_LACP_3PortFailuresFastHeartbeat.py
+<br>Testname: test_LACP_ChangeModeWithFallbackSinglePort.py
+<br>Testname: test_LinkAggregation_LACP_8PortFailuresBroadcastMulticastIPv4.py
+<br>Testname: test_LinkAggregation_LACP_8PortFailuresMulticastIPv6.py
+<br>Testname: test_LinkAggregation_LAG_L3BGPIPv4.py
+<br>Testname: test_LinkAggregation_LAG_8PortFailuresBroadcastMulticastIPv4.py
+<br>Testname: test_LinkAggregation_LAG_8PortFailuresMulticastIPv6.py
+<br>Testname: test_LinkAggregation_LAG_MaxLagsPersistence.py
+<br>Testname: test_LinkAggregation_LAG_8PortFailures.py
+<br>Testname: test_LinkAggregation_LAG_L3IPv4Failover.py
+<br>Testname: test_LinkAggregation_LAG_L3IPv6Failover.py
+<br>
+        </div>
+        </div>
+    
+<HR><h2 style="margin-left: 8px" > Top 3 Topologies with Most Ixia Ports</h2>
+<HR><h3 style="margin-left: 8px" > Topology name: 1sw_2ixia_2link_1host</h3>
+<br><pre><p5> +----------+   +--------+
+</p5></pre><pre><p5> |    ops1  |   | ixnet1 |
+</p5></pre><pre><p5> +--+---+---+   +--------+
+</p5></pre><pre><p5>    |   |
+</p5></pre><pre><p5> +--+---+---+
+</p5></pre><pre><p5> |    ix1   |
+</p5></pre><pre><p5> +----------+
+</p5></pre>
+<br> <p1 style="margin-left: 8px" >Switch count: 1</p1 >
+<br> <p1 style="margin-left: 8px" >Ixia count: 2</p1 >
+<br> <p1 style="margin-left: 8px" >Link count: 2</p1 >
+<br> <p1 style="margin-left: 8px" >VM count: 1</p1 >
+<br><blockquote> <p1 style="margin-left: 8px" >Host [Win7]: 32</p1 >
+<br></blockquote> <p1 style="margin-left: 8px" >Test file count: 32</p1 >
+<br>
+<br>
+        <div class="tab" id="navigation">
+                <a href="#" class="button" onclick="swap('test279');return false;">
+    Show test files:
+            </a>
+            <div class ="tab" id="test279" style="display: none;">
+        Testname: test_ACL_ShowACL.py
+<br>Testname: test_ACL_LoggingTimer.py
+<br>Testname: test_ACL_Logging.py
+<br>Testname: test_ACL_MaxACEs_2Ports.py
+<br>Testname: test_ACL_DeletingACEs.py
+<br>Testname: test_ACL_MaxACEs_1Port.py
+<br>Testname: test_ACL_LoggingStatsDelete.py
+<br>Testname: test_ACL_Toggled.py
+<br>Testname: test_ACL_Stats.py
+<br>Testname: test_ACL_Reboot.py
+<br>Testname: test_ACL_2ACLs_2Ports.py
+<br>Testname: test_ACL_LineRate.py
+<br>Testname: test_ACL_ModifyACLs.py
+<br>Testname: test_ACL_LinkTransitions.py
+<br>Testname: test_ACL_ClearHitcounts.py
+<br>Testname: test_ACL_LoggingStats.py
+<br>Testname: test_CoPP_Stp_Bgp.py
+<br>Testname: test_CoPP_UCOspf_Bgp_bursttraffic.py
+<br>Testname: test_CoPP_LacpArp_Icmp.py
+<br>Testname: test_CoPP_Arp_Sflow.py
+<br>Testname: test_CoPP_scale.py
+<br>Testname: test_CoPP_Bgp_Stp_bursttraffic.py
+<br>Testname: test_CoPP_Lacp_OspfMC_Icmp.py
+<br>Testname: test_CoPP_Bgp_UCOspf_bursttraffic.py
+<br>Testname: test_CoPP_Lacp_Lldp.py
+<br>Testname: test_CoPP_Lacp_OspfMC.py
+<br>Testname: test_CoPP_ArpBC_Dhcp.py
+<br>Testname: test_CoPP_Lacp_ArpBC.py
+<br>Testname: test_CoPP_ArpBC_OspfMC.py
+<br>Testname: test_CoPP_Bgp_UCOspf.py
+<br>Testname: test_CoPP_Bgp_OspfMC.py
+<br>Testname: test_CoPP_Bgp_ArpBC.py
+<br>
+        </div>
+        </div>
+    
+<HR><h3 style="margin-left: 8px" > Topology name: 2sw_2ixia_5link_0host</h3>
+<br><pre><p5>          +-----------------+
+</p5></pre><pre><p5>          |                 |
+</p5></pre><pre><p5>          |    IXIA port    |
+</p5></pre><pre><p5>          |                 |
+</p5></pre><pre><p5>          +-----------------+
+</p5></pre><pre><p5>                   |
+</p5></pre><pre><p5>                   |
+</p5></pre><pre><p5>    +-------------------------------+
+</p5></pre><pre><p5>    |                               |
+</p5></pre><pre><p5>    |                               |
+</p5></pre><pre><p5>    |            ops1               |
+</p5></pre><pre><p5>    |                               |
+</p5></pre><pre><p5>    +-------------------------------+
+</p5></pre><pre><p5>              |   |    |
+</p5></pre><pre><p5>              |   |    |
+</p5></pre><pre><p5>              |   |    |
+</p5></pre><pre><p5>              |   |    |
+</p5></pre><pre><p5>    +-------------------------------+
+</p5></pre><pre><p5>    |                               |
+</p5></pre><pre><p5>    |                               |
+</p5></pre><pre><p5>    |            ops2               |
+</p5></pre><pre><p5>    |                               |
+</p5></pre><pre><p5>    +-------------------------------+
+</p5></pre><pre><p5>                   |
+</p5></pre><pre><p5>                   |
+</p5></pre><pre><p5>           +-----------------+
+</p5></pre><pre><p5>           |                 |
+</p5></pre><pre><p5>           |    IXIA port    |
+</p5></pre><pre><p5>           |                 |
+</p5></pre><pre><p5>           +-----------------+
+</p5></pre>
+<br> <p1 style="margin-left: 8px" >Switch count: 2</p1 >
+<br> <p1 style="margin-left: 8px" >Ixia count: 2</p1 >
+<br> <p1 style="margin-left: 8px" >Link count: 5</p1 >
+<br> <p1 style="margin-left: 8px" >VM count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Test file count: 31</p1 >
+<br>
+<br>
+        <div class="tab" id="navigation">
+                <a href="#" class="button" onclick="swap('test280');return false;">
+    Show test files:
+            </a>
+            <div class ="tab" id="test280" style="display: none;">
+        Testname: test_ECMP_NextHopFailoverStaticRoutes.py
+<br>Testname: test_ECMP_MaxNextHopsSingleRouteStaticRoute.py
+<br>Testname: test_ECMP_NextHopFailoverBGP.py
+<br>Testname: test_ECMP_MaxNextHopsOverLAG.py
+<br>Testname: test_ECMP_MaxNextHopsMaxRoutesStaticRouteIPv6.py
+<br>Testname: test_ECMP_MaxNextHopsMaxRouteStaticRoute.py
+<br>Testname: test_ECMP_MaxNextHopsMaxRoutesOSPF.py
+<br>Testname: test_ECMP_MaxNextHopsSingleRouteStaticRouteIPv6.py
+<br>Testname: test_ECMP_MaxNextHopsSingleRouteBGP.py
+<br>Testname: test_ECMP_MaxNextHopsSingleRouteOSPF.py
+<br>Testname: test_ECMP_MaxNextHopsMaxRoutesBGP.py
+<br>Testname: test_ECMP_ReconvergenceTime.py
+<br>Testname: test_ECMP_NextHopFailoverOSPF.py
+<br>Testname: test_LACP_ChangeModeWithoutFallback.py
+<br>Testname: test_LinkAggregation_LACP_3PortFailuresSlowHeartbeat.py
+<br>Testname: test_LinkAggregation_LACP_L3IPv6Failover.py
+<br>Testname: test_LinkAggregation_LACP_AggKeySameSwLowPriority.py
+<br>Testname: test_LinkAggregation_LACP_LinkMigration.py
+<br>Testname: test_LinkAggregation_LACP_L3BGPIPv4.py
+<br>Testname: test_LinkAggregation_LACP_L3IPv4Failover.py
+<br>Testname: test_LinkAggregation_LACP_3PortFailuresFastHeartbeat.py
+<br>Testname: test_LACP_ChangeModeWithFallbackSinglePort.py
+<br>Testname: test_LinkAggregation_LACP_8PortFailuresBroadcastMulticastIPv4.py
+<br>Testname: test_LinkAggregation_LACP_8PortFailuresMulticastIPv6.py
+<br>Testname: test_LinkAggregation_LAG_L3BGPIPv4.py
+<br>Testname: test_LinkAggregation_LAG_8PortFailuresBroadcastMulticastIPv4.py
+<br>Testname: test_LinkAggregation_LAG_8PortFailuresMulticastIPv6.py
+<br>Testname: test_LinkAggregation_LAG_MaxLagsPersistence.py
+<br>Testname: test_LinkAggregation_LAG_8PortFailures.py
+<br>Testname: test_LinkAggregation_LAG_L3IPv4Failover.py
+<br>Testname: test_LinkAggregation_LAG_L3IPv6Failover.py
+<br>
+        </div>
+        </div>
+    
+<HR><h3 style="margin-left: 8px" > Topology name: 2sw_2ixia_3link_0host</h3>
+<br><pre><p5>              +------------+              +-------------+
+</p5></pre><pre><p5>              |            |              |             |
+</p5></pre><pre><p5>              |            |              |             |
+</p5></pre><pre><p5> +-------+    |            |              |             |    +-------+
+</p5></pre><pre><p5> |       |    |            |              |             |    |       |
+</p5></pre><pre><p5> | IXIA  +----+    DUT     +--------------+    Switch   +----+ IXIA  |
+</p5></pre><pre><p5> |       |    |            |              |             |    |       |
+</p5></pre><pre><p5> +-------+    |            |              |             |    +-------+
+</p5></pre><pre><p5>              |            |              |             |
+</p5></pre><pre><p5>              |            |              |             |
+</p5></pre><pre><p5>              |            |              |             |
+</p5></pre><pre><p5>              +------------+              +-------------+
+</p5></pre>
+<br> <p1 style="margin-left: 8px" >Switch count: 2</p1 >
+<br> <p1 style="margin-left: 8px" >Ixia count: 2</p1 >
+<br> <p1 style="margin-left: 8px" >Link count: 3</p1 >
+<br> <p1 style="margin-left: 8px" >VM count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Test file count: 25</p1 >
+<br>
+<br>
+        <div class="tab" id="navigation">
+                <a href="#" class="button" onclick="swap('test281');return false;">
+    Show test files:
+            </a>
+            <div class ="tab" id="test281" style="display: none;">
+        Testname: test_StaticRoute_IPv6TrafficOverTrunk.py
+<br>Testname: test_StaticRoute_Ipv6UnidirectionalUdpThroughput.py
+<br>Testname: test_StaticRoute_HighNumberOfRoutesAfterReboot.py
+<br>Testname: test_StaticRoute_TrafficFromSingleVlanToMultiVlan.py
+<br>Testname: test_StaticRoute_ConcurrentIPv4IPv6WithMaxTraffic.py
+<br>Testname: test_StaticRoute_Ipv4UnidirectionalUdpThroughput.py
+<br>Testname: test_StaticRoute_Ipv6UnidirectionalTcpGoodput.py
+<br>Testname: test_StaticRoute_MaxTrafficBetweenHostsOverL3Interface.py
+<br>Testname: test_StaticRoute_IPv6TrafficOverL3.py
+<br>Testname: test_StaticRoute_InterVlanMaxTraffic.py
+<br>Testname: test_StaticRoute_IPv4TrafficOverTrunk.py
+<br>Testname: test_StaticRoute_Ipv6BidirectionalTcpGoodput.py
+<br>Testname: test_StaticRoute_InterfaceFlapping.py
+<br>Testname: test_StaticRoute_HighNumberOfRoutesAfterDaemonRestart.py
+<br>Testname: test_StaticRoute_Ipv4UnidirectionalTcpGoodput.py
+<br>Testname: test_StaticRoute_Ipv4BidirectionalUdpThroughput.py
+<br>Testname: test_StaticRoute_IPv4TrafficOverL3.py
+<br>Testname: test_StaticRoute_Ipv6BidirectionalUdpThroughput.py
+<br>Testname: test_StaticRoute_Ipv4BidirectionalTcpGoodput.py
+<br>Testname: test_StaticRoute_IPv4IPv6RouteAddDeletionWithTraffic.py
+<br>Testname: test_BGP_AddPeerPerformance.py
+<br>Testname: test_ECMP_MaxNextHopsSubinterfacesStaticRoute.py
+<br>Testname: test_ECMP_MaxNextHopsOverVLANInterface.py
+<br>Testname: test_ECMP_MaxNextHopsSubinterfacesOSPF.py
+<br>Testname: test_ECMP_MaxNextHopsSubinterfacesBGP.py
+<br>
+        </div>
+        </div>
+    
+<HR><h2 style="margin-left: 8px" > Top 3 Topologies with Most Hosts</h2>
+<HR><h3 style="margin-left: 8px" > Topology name: 1sw_0ixia_1link_1host</h3>
+<br><pre><p5> +-------+
+</p5></pre><pre><p5> |       |     +-------+
+</p5></pre><pre><p5> |  hs1  <----->  sw1  |
+</p5></pre><pre><p5> |       |     +-------+
+</p5></pre><pre><p5> +-------+
+</p5></pre>
+<br> <p1 style="margin-left: 8px" >Switch count: 1</p1 >
+<br> <p1 style="margin-left: 8px" >Ixia count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Link count: 1</p1 >
+<br> <p1 style="margin-left: 8px" >VM count: 1</p1 >
+<br><blockquote> <p1 style="margin-left: 8px" >Host [Ubuntu]: 54</p1 >
+<br></blockquote> <p1 style="margin-left: 8px" >Test file count: 54</p1 >
+<br>
+<br>
+        <div class="tab" id="navigation">
+                <a href="#" class="button" onclick="swap('test282');return false;">
+    Show test files:
+            </a>
+            <div class ="tab" id="test282" style="display: none;">
+        Testname: test_ft_vlan_id_validation.py
+<br>Testname: test_ft_vlan_state_transition.py
+<br>Testname: test_switchd_opennsl_ct_loopback.py
+<br>Testname: test_dhcp_tftp_server_ft.py
+<br>Testname: test_vtysh_ct_system.py
+<br>Testname: test_vtysh_ct_tempsensor.py
+<br>Testname: test_vtysh_ct_led.py
+<br>Testname: test_vtysh_ct_fan.py
+<br>Testname: test_vtysh_ct_db_intf.py
+<br>Testname: test_vtysh_ct_ecmp_cli.py
+<br>Testname: test_supportability_ft_core_dump.py
+<br>Testname: test_ops-restd_ft_auditlog.py
+<br>Testname: test_snmpwalk_ft_lldp.py
+<br>Testname: test_snmpget_ft_lldp.py
+<br>Testname: test_snmpbulkget_ft_lldp.py
+<br>Testname: test_snmpgetnext_ft_lldp.py
+<br>Testname: test_copp.py
+<br>Testname: test_vtysh_ct_system.py
+<br>Testname: test_bgp_ct_timers.py
+<br>Testname: test_bgp_ct_show_bgp_neighbors.py
+<br>Testname: test_bgp_ct_show_running_config.py
+<br>Testname: test_bgp_ct_router_bgp.py
+<br>Testname: test_bgp_ct_network_cfg.py
+<br>Testname: test_bgp_ct_router_id.py
+<br>Testname: test_portd_ct_inter_vlan_interface.py
+<br>Testname: test_portd_ct_admin_state.py
+<br>Testname: test_Loopback_DeleteMaxLoopbackIpv6Interfaces.py
+<br>Testname: test_Loopback_DeleteMaxLoopbackIpv4Interfaces.py
+<br>Testname: test_Loopback_IPv4InterfacesPingHost.py
+<br>Testname: test_Loopback_ConfigurationPersistenceMaxLoopbackTraffic.py
+<br>Testname: test_Loopback_MaxIPv4InterfacesConfigure.py
+<br>Testname: test_Loopback_MaxIpv6InterfacesConfigure.py
+<br>Testname: test_Loopback_IPv6Ping6Host.py
+<br>Testname: test_Subinterface_Ipv4MaxSubintsPerPhysicalInterface.py
+<br>Testname: test_Subinterface_Ipv6MaxSubintsPerPhysicalInterface.py
+<br>Testname: test_SftpServer_CfgPersistence.py
+<br>Testname: test_TFTP_MaxSimultaneousTFTP_Connections.py
+<br>Testname: test_AAA_MaximumRadiusConfigurationSupport.py
+<br>Testname: test_RBAC_netop_permissions_rest.py
+<br>Testname: test_RBAC_netop_password_rest.py
+<br>Testname: test_RBAC_admin_permissions_rest.py
+<br>Testname: test_NTPClient_AddEraseNTP.py
+<br>Testname: test_NTPClient_EnableDisableNTPAuthentication.py
+<br>Testname: test_SNMPInfra_MixGetOperations.py
+<br>Testname: test_REST_LoginManyTimesSameUserCredentials.py
+<br>Testname: test_REST_httpsCertificate.py
+<br>Testname: test_MgmtInterface_IPv4IPv6Interoperability.py
+<br>Testname: test_MgmtInterface_IPAddressAssignDynamically.py
+<br>Testname: test_MgmtInterface_IPv4AddressAssignStatically.py
+<br>Testname: test_MgmtInterface_IPv6AddressAssignStatically.py
+<br>Testname: test_MgmtInterface_IPAddressAssignInteroperability.py
+<br>Testname: test_MgmtInterface_LinkFlap.py
+<br>Testname: test_upgrade_downgrade_from_onie.py
+<br>Testname: test_upgrade_downgrade_from_bash.py
+<br>
+        </div>
+        </div>
+    
+<HR><h3 style="margin-left: 8px" > Topology name: 1sw_0ixia_2link_2host</h3>
+<br><pre><p5>                    +----------------+
+</p5></pre><pre><p5>                    |                |
+</p5></pre><pre><p5>                    |   Host 2       |
+</p5></pre><pre><p5>                    |  (sflowtool)   |
+</p5></pre><pre><p5>                    |                |
+</p5></pre><pre><p5>                    +-+--------------+
+</p5></pre><pre><p5>                      |
+</p5></pre><pre><p5>                      |
+</p5></pre><pre><p5>         +------------+--+
+</p5></pre><pre><p5>         |               |
+</p5></pre><pre><p5>         |               |
+</p5></pre><pre><p5>         |    Open       |
+</p5></pre><pre><p5>         |    Switch     |
+</p5></pre><pre><p5>         |               |
+</p5></pre><pre><p5>         |               |
+</p5></pre><pre><p5>         +-+-------------+
+</p5></pre><pre><p5>           |
+</p5></pre><pre><p5>           |
+</p5></pre><pre><p5>+----------+--+
+</p5></pre><pre><p5>|             |
+</p5></pre><pre><p5>|             |
+</p5></pre><pre><p5>|  Host 1     |
+</p5></pre><pre><p5>|             |
+</p5></pre><pre><p5>+-------------+
+</p5></pre>
+<br> <p1 style="margin-left: 8px" >Switch count: 1</p1 >
+<br> <p1 style="margin-left: 8px" >Ixia count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Link count: 2</p1 >
+<br> <p1 style="margin-left: 8px" >VM count: 2</p1 >
+<br><blockquote> <p1 style="margin-left: 8px" >Host [openswitch/sflowtool/latest]: 3</p1 >
+<br></blockquote><blockquote> <p1 style="margin-left: 8px" >Host [Ubuntu]: 39</p1 >
+<br></blockquote> <p1 style="margin-left: 8px" >Test file count: 21</p1 >
+<br>
+<br>
+        <div class="tab" id="navigation">
+                <a href="#" class="button" onclick="swap('test283');return false;">
+    Show test files:
+            </a>
+            <div class ="tab" id="test283" style="display: none;">
+        Testname: test_ft_vlan_state_reason_transition.py
+<br>Testname: test_vland_ft_trunk_allowed.py
+<br>Testname: test_vland_ft_vlan_access.py
+<br>Testname: test_trunk_native_tag_and_untag.py
+<br>Testname: test_layer3_ct_fastpath_connected.py
+<br>Testname: test_dhcp_tftp_ft_static_ipv4_commands.py
+<br>Testname: test_dhcp_tftp_ft_dynamic_ipv4_commands.py
+<br>Testname: test_sflow_ft_sampling_rate.py
+<br>Testname: test_sflow_ft_agent_interface.py
+<br>Testname: test_sflow_ft_polling_interval.py
+<br>Testname: test_arpmgrd_ct_transaction_failure.py
+<br>Testname: test_arpmgrd_ct_functionality.py
+<br>Testname: test_mac_flush.py
+<br>Testname: test_maclearning.py
+<br>Testname: test_ft_interface_autoneg.py
+<br>Testname: test_ft_interface_enable_disable.py
+<br>Testname: test_interfaces_ft_intf_stats.py
+<br>Testname: test_layer3_ft_slowpath_connected.py
+<br>Testname: test_ConfigPersistence_ConfigPersistenceForL3Features.py
+<br>Testname: test_ConfigPersistence_ConfigPersistenceForServerConfig.py
+<br>Testname: test_GatingPhysicalTest.py
+<br>
+        </div>
+        </div>
+    
+<HR><h3 style="margin-left: 8px" > Topology name: 1sw_0ixia_4link_4host</h3>
+<br><pre><p5>+----------------+      +----------------+
+</p5></pre><pre><p5>|                |      |                |
+</p5></pre><pre><p5>|    Host-4      |      |    Host-3      |
+</p5></pre><pre><p5>|  (sflowtool-3) |      |  (sflowtool-2) |
+</p5></pre><pre><p5>|                |      |                |
+</p5></pre><pre><p5>+--------------+-+      +-+--------------+
+</p5></pre><pre><p5>               |          |
+</p5></pre><pre><p5>               |          |
+</p5></pre><pre><p5>             +-+----------+--+
+</p5></pre><pre><p5>             |               |
+</p5></pre><pre><p5>             |               |
+</p5></pre><pre><p5>             |    Open       |
+</p5></pre><pre><p5>             |    Switch     |
+</p5></pre><pre><p5>             |               |
+</p5></pre><pre><p5>             |               |
+</p5></pre><pre><p5>             +-+----------+--+
+</p5></pre><pre><p5>               |          |
+</p5></pre><pre><p5>               |          |
+</p5></pre><pre><p5>       +-------+--+     +-+--------------+
+</p5></pre><pre><p5>       |          |     |                |
+</p5></pre><pre><p5>       |          |     |    Host-2      |
+</p5></pre><pre><p5>       | Host-1   |     |  (sflowtool-1) |
+</p5></pre><pre><p5>       |          |     |                |
+</p5></pre><pre><p5>       +----------+     +----------------+
+</p5></pre>
+<br> <p1 style="margin-left: 8px" >Switch count: 1</p1 >
+<br> <p1 style="margin-left: 8px" >Ixia count: 0</p1 >
+<br> <p1 style="margin-left: 8px" >Link count: 4</p1 >
+<br> <p1 style="margin-left: 8px" >VM count: 4</p1 >
+<br><blockquote> <p1 style="margin-left: 8px" >Host [openswitch/sflowtool/latest]: 3</p1 >
+<br></blockquote><blockquote> <p1 style="margin-left: 8px" >Host [openswitch/ubuntuscapy/latest]: 2</p1 >
+<br></blockquote><blockquote> <p1 style="margin-left: 8px" >Host [Host 1]: 1</p1 >
+<br></blockquote><blockquote> <p1 style="margin-left: 8px" >Host [Host 2]: 1</p1 >
+<br></blockquote><blockquote> <p1 style="margin-left: 8px" >Host [Host 3]: 1</p1 >
+<br></blockquote><blockquote> <p1 style="margin-left: 8px" >Host [Host 4]: 1</p1 >
+<br></blockquote><blockquote> <p1 style="margin-left: 8px" >Host [Ubuntu]: 27</p1 >
+<br></blockquote> <p1 style="margin-left: 8px" >Test file count: 9</p1 >
+<br>
+<br>
+        <div class="tab" id="navigation">
+                <a href="#" class="button" onclick="swap('test284');return false;">
+    Show test files:
+            </a>
+            <div class ="tab" id="test284" style="display: none;">
+        Testname: test_sflow_ft_multiple_collectors.py
+<br>Testname: test_layer3_ft_ecmp_resilient_ipv6.py
+<br>Testname: test_layer3_ft_ecmp_resilient.py
+<br>Testname: test_supportability_ft_syslog_remote.py
+<br>Testname: test_qos_trust.py
+<br>Testname: test_mirror_physical.py
+<br>Testname: test_mirror.py
+<br>Testname: test_layer3_ft_intervlan_routing.py
+<br>Testname: test_Logging_MaxLoggingServers.py
+<br>
+        </div>
+        </div>
+    
+    </div>
+    {% endblock %}
+    

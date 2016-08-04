@@ -1,0 +1,828 @@
+
+    {% extends "empire/index.html" %}
+    {% block selected_scaling %}class="current"{% endblock %}
+    {% block page_content %}
+    <div class="content">
+    <script type="text/javascript">
+        function swap(targetId){
+          if (document.getElementById){
+            target = document.getElementById(targetId);
+            if (target.style.display == "none"){
+                target.style.display = "";
+            } else{
+                target.style.display = "none";
+            }
+        }
+    }
+    </script>
+    <title>
+    Dashboard Summary
+    </title>
+    </head>
+    <body style="padding:10">
+    <style>
+
+    .center {
+        margin: auto;
+        width: 50%;
+    }
+    pre{
+        padding-left: 140px;
+        color: #59b4a1;
+        font-size: 150%;
+        font-family: monospace;
+        }
+    </style>
+    <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    
+        <div class="filters">
+          <table>
+            <tr>
+                <th>
+                    <div class="dropdown cf">
+                        <a href="#">Topology Navigation: <span id="drop_metric" class="current">Dashboard</span></a>
+                        <div>
+                            <a class="icosolo icon_arrow_down" href="#"></a>
+                            <ul>
+                                    <li><a href="/empire/topology_dashboard">Dashboard</a></li><li><a href="/empire/topology_summary">Summary</a></li><li><a href="/empire/topology_optimization">Optimization</a></li><li><a href="/empire/topology_listing">Topology Listing</a></li>
+                            </ul>
+                       </div>
+                   </div>
+               </th>
+           </table>
+    </div>
+<div class="page_title">Dashboard</div>
+<HR> <p1 style="margin-left: 8px" >Report generated on: Thu Aug  4 13:46:38 2016</p1 >
+<br> <p1 style="margin-left: 8px" >Using repository: git://git-nos.rose.rdlabs.hpecorp.net/hpe/hpe-enterprise-tests</p1 >
+<br> <p1 style="margin-left: 8px" >Using repository: https://git.openswitch.net/openswitch/ops-build</p1 >
+<br> <p1 style="margin-left: 8px" >Total test file count: 603</p1 >
+<br> <p1 style="margin-left: 8px" >Total test count: 729</p1 >
+<br>
+<HR><h2 style="margin-left: 8px" > Top 3 Most Common Topologies</h2><h3 align="center" >1sw_0ixia_0link_0host</h3>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Test file count</th><th>Switch count</th><th>Ixia count</th><th>Link count</th><th>Host count</th></tr> <tr>
+        <td><output id="tableBox44" />126</output></td>
+        
+        <td><output id="tableBox45" />1</output></td>
+        
+        <td><output id="tableBox46" />0</output></td>
+        
+        <td><output id="tableBox47" />0</output></td>
+        
+        <td><output id="tableBox48" />0</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Percentage of total test files</th><th>Total topology switch count</th><th>Total topology ixia count</th><th>Total topology link count</th><th>Total topology host count</th></tr> <tr>
+        <td><output id="tableBox49" />20.90%</output></td>
+        
+        <td><output id="tableBox49" />126</output></td>
+        
+        <td><output id="tableBox50" />0</output></td>
+        
+        <td><output id="tableBox51" />0</output></td>
+        
+        <td><output id="tableBox52" />0</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+<HR>
+<br><h3 align="center" >1sw_0ixia_1link_1host</h3>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Test file count</th><th>Switch count</th><th>Ixia count</th><th>Link count</th><th>Host count</th></tr> <tr>
+        <td><output id="tableBox44" />54</output></td>
+        
+        <td><output id="tableBox45" />1</output></td>
+        
+        <td><output id="tableBox46" />0</output></td>
+        
+        <td><output id="tableBox47" />1</output></td>
+        
+        <td><output id="tableBox48" />1</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Percentage of total test files</th><th>Total topology switch count</th><th>Total topology ixia count</th><th>Total topology link count</th><th>Total topology host count</th></tr> <tr>
+        <td><output id="tableBox49" />8.96%</output></td>
+        
+        <td><output id="tableBox49" />54</output></td>
+        
+        <td><output id="tableBox50" />0</output></td>
+        
+        <td><output id="tableBox51" />54</output></td>
+        
+        <td><output id="tableBox52" />54</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+<HR>
+<br><h3 align="center" >2sw_0ixia_1link_0host</h3>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Test file count</th><th>Switch count</th><th>Ixia count</th><th>Link count</th><th>Host count</th></tr> <tr>
+        <td><output id="tableBox44" />36</output></td>
+        
+        <td><output id="tableBox45" />2</output></td>
+        
+        <td><output id="tableBox46" />0</output></td>
+        
+        <td><output id="tableBox47" />1</output></td>
+        
+        <td><output id="tableBox48" />0</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Percentage of total test files</th><th>Total topology switch count</th><th>Total topology ixia count</th><th>Total topology link count</th><th>Total topology host count</th></tr> <tr>
+        <td><output id="tableBox49" />5.97%</output></td>
+        
+        <td><output id="tableBox49" />72</output></td>
+        
+        <td><output id="tableBox50" />0</output></td>
+        
+        <td><output id="tableBox51" />36</output></td>
+        
+        <td><output id="tableBox52" />0</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+<HR>
+<br>
+    <div id="chartContainer3" class="center" style="height: 300px; width: 60%;">
+    </div><h2 style="margin-left: 8px" > Top 3 Topologies with Most Switches</h2><h3 align="center" >1sw_0ixia_0link_0host</h3>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Test file count</th><th>Switch count</th><th>Ixia count</th><th>Link count</th><th>Host count</th></tr> <tr>
+        <td><output id="tableBox44" />126</output></td>
+        
+        <td><output id="tableBox45" />1</output></td>
+        
+        <td><output id="tableBox46" />0</output></td>
+        
+        <td><output id="tableBox47" />0</output></td>
+        
+        <td><output id="tableBox48" />0</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Percentage of total test files</th><th>Total topology switch count</th><th>Total topology ixia count</th><th>Total topology link count</th><th>Total topology host count</th></tr> <tr>
+        <td><output id="tableBox49" />20.90%</output></td>
+        
+        <td><output id="tableBox49" />126</output></td>
+        
+        <td><output id="tableBox50" />0</output></td>
+        
+        <td><output id="tableBox51" />0</output></td>
+        
+        <td><output id="tableBox52" />0</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+<HR>
+<br><h3 align="center" >2sw_0ixia_1link_0host</h3>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Test file count</th><th>Switch count</th><th>Ixia count</th><th>Link count</th><th>Host count</th></tr> <tr>
+        <td><output id="tableBox44" />36</output></td>
+        
+        <td><output id="tableBox45" />2</output></td>
+        
+        <td><output id="tableBox46" />0</output></td>
+        
+        <td><output id="tableBox47" />1</output></td>
+        
+        <td><output id="tableBox48" />0</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Percentage of total test files</th><th>Total topology switch count</th><th>Total topology ixia count</th><th>Total topology link count</th><th>Total topology host count</th></tr> <tr>
+        <td><output id="tableBox49" />5.97%</output></td>
+        
+        <td><output id="tableBox49" />72</output></td>
+        
+        <td><output id="tableBox50" />0</output></td>
+        
+        <td><output id="tableBox51" />36</output></td>
+        
+        <td><output id="tableBox52" />0</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+<HR>
+<br><h3 align="center" >2sw_2ixia_5link_0host</h3>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Test file count</th><th>Switch count</th><th>Ixia count</th><th>Link count</th><th>Host count</th></tr> <tr>
+        <td><output id="tableBox44" />31</output></td>
+        
+        <td><output id="tableBox45" />2</output></td>
+        
+        <td><output id="tableBox46" />2</output></td>
+        
+        <td><output id="tableBox47" />5</output></td>
+        
+        <td><output id="tableBox48" />0</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Percentage of total test files</th><th>Total topology switch count</th><th>Total topology ixia count</th><th>Total topology link count</th><th>Total topology host count</th></tr> <tr>
+        <td><output id="tableBox49" />5.14%</output></td>
+        
+        <td><output id="tableBox49" />62</output></td>
+        
+        <td><output id="tableBox50" />62</output></td>
+        
+        <td><output id="tableBox51" />155</output></td>
+        
+        <td><output id="tableBox52" />0</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+<HR>
+<br>
+    <div id="chartContainer4" class="center" style="height: 300px; width: 60%;">
+    </div><h2 style="margin-left: 8px" > Top 3 Topologies with Most Ixia Ports</h2><h3 align="center" >1sw_2ixia_2link_1host</h3>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Test file count</th><th>Switch count</th><th>Ixia count</th><th>Link count</th><th>Host count</th></tr> <tr>
+        <td><output id="tableBox44" />32</output></td>
+        
+        <td><output id="tableBox45" />1</output></td>
+        
+        <td><output id="tableBox46" />2</output></td>
+        
+        <td><output id="tableBox47" />2</output></td>
+        
+        <td><output id="tableBox48" />1</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Percentage of total test files</th><th>Total topology switch count</th><th>Total topology ixia count</th><th>Total topology link count</th><th>Total topology host count</th></tr> <tr>
+        <td><output id="tableBox49" />5.31%</output></td>
+        
+        <td><output id="tableBox49" />32</output></td>
+        
+        <td><output id="tableBox50" />64</output></td>
+        
+        <td><output id="tableBox51" />64</output></td>
+        
+        <td><output id="tableBox52" />32</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+<HR>
+<br><h3 align="center" >2sw_2ixia_5link_0host</h3>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Test file count</th><th>Switch count</th><th>Ixia count</th><th>Link count</th><th>Host count</th></tr> <tr>
+        <td><output id="tableBox44" />31</output></td>
+        
+        <td><output id="tableBox45" />2</output></td>
+        
+        <td><output id="tableBox46" />2</output></td>
+        
+        <td><output id="tableBox47" />5</output></td>
+        
+        <td><output id="tableBox48" />0</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Percentage of total test files</th><th>Total topology switch count</th><th>Total topology ixia count</th><th>Total topology link count</th><th>Total topology host count</th></tr> <tr>
+        <td><output id="tableBox49" />5.14%</output></td>
+        
+        <td><output id="tableBox49" />62</output></td>
+        
+        <td><output id="tableBox50" />62</output></td>
+        
+        <td><output id="tableBox51" />155</output></td>
+        
+        <td><output id="tableBox52" />0</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+<HR>
+<br><h3 align="center" >2sw_2ixia_3link_0host</h3>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Test file count</th><th>Switch count</th><th>Ixia count</th><th>Link count</th><th>Host count</th></tr> <tr>
+        <td><output id="tableBox44" />25</output></td>
+        
+        <td><output id="tableBox45" />2</output></td>
+        
+        <td><output id="tableBox46" />2</output></td>
+        
+        <td><output id="tableBox47" />3</output></td>
+        
+        <td><output id="tableBox48" />0</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Percentage of total test files</th><th>Total topology switch count</th><th>Total topology ixia count</th><th>Total topology link count</th><th>Total topology host count</th></tr> <tr>
+        <td><output id="tableBox49" />4.15%</output></td>
+        
+        <td><output id="tableBox49" />50</output></td>
+        
+        <td><output id="tableBox50" />50</output></td>
+        
+        <td><output id="tableBox51" />75</output></td>
+        
+        <td><output id="tableBox52" />0</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+<HR>
+<br>
+    <div id="chartContainer5" class="center" style="height: 300px; width: 60%;">
+    </div><h2 style="margin-left: 8px" > Top 3 Topologies with Most Hosts</h2><h3 align="center" >1sw_0ixia_1link_1host</h3>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Test file count</th><th>Switch count</th><th>Ixia count</th><th>Link count</th><th>Host count</th></tr> <tr>
+        <td><output id="tableBox44" />54</output></td>
+        
+        <td><output id="tableBox45" />1</output></td>
+        
+        <td><output id="tableBox46" />0</output></td>
+        
+        <td><output id="tableBox47" />1</output></td>
+        
+        <td><output id="tableBox48" />1</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Percentage of total test files</th><th>Total topology switch count</th><th>Total topology ixia count</th><th>Total topology link count</th><th>Total topology host count</th></tr> <tr>
+        <td><output id="tableBox49" />8.96%</output></td>
+        
+        <td><output id="tableBox49" />54</output></td>
+        
+        <td><output id="tableBox50" />0</output></td>
+        
+        <td><output id="tableBox51" />54</output></td>
+        
+        <td><output id="tableBox52" />54</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+<HR>
+<br><h3 align="center" >1sw_0ixia_2link_2host</h3>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Test file count</th><th>Switch count</th><th>Ixia count</th><th>Link count</th><th>Host count</th></tr> <tr>
+        <td><output id="tableBox44" />21</output></td>
+        
+        <td><output id="tableBox45" />1</output></td>
+        
+        <td><output id="tableBox46" />0</output></td>
+        
+        <td><output id="tableBox47" />2</output></td>
+        
+        <td><output id="tableBox48" />2</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Percentage of total test files</th><th>Total topology switch count</th><th>Total topology ixia count</th><th>Total topology link count</th><th>Total topology host count</th></tr> <tr>
+        <td><output id="tableBox49" />3.48%</output></td>
+        
+        <td><output id="tableBox49" />21</output></td>
+        
+        <td><output id="tableBox50" />0</output></td>
+        
+        <td><output id="tableBox51" />42</output></td>
+        
+        <td><output id="tableBox52" />42</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+<HR>
+<br><h3 align="center" >1sw_0ixia_4link_4host</h3>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Test file count</th><th>Switch count</th><th>Ixia count</th><th>Link count</th><th>Host count</th></tr> <tr>
+        <td><output id="tableBox44" />9</output></td>
+        
+        <td><output id="tableBox45" />1</output></td>
+        
+        <td><output id="tableBox46" />0</output></td>
+        
+        <td><output id="tableBox47" />4</output></td>
+        
+        <td><output id="tableBox48" />4</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+        <div class = "panel_wrapper">
+        <div class = "panel table rounded white no_pad">
+        <div class = "table_wrapper">
+        <font size="3">
+        <table class="data selective">
+      <th>Percentage of total test files</th><th>Total topology switch count</th><th>Total topology ixia count</th><th>Total topology link count</th><th>Total topology host count</th></tr> <tr>
+        <td><output id="tableBox49" />1.49%</output></td>
+        
+        <td><output id="tableBox49" />9</output></td>
+        
+        <td><output id="tableBox50" />0</output></td>
+        
+        <td><output id="tableBox51" />36</output></td>
+        
+        <td><output id="tableBox52" />36</output></td>
+        
+        </tr>
+        </table>
+        </font>
+        </div>
+        </div>
+        </div>
+    
+<br>
+<HR>
+<br>
+    <div id="chartContainer6" class="center" style="height: 300px; width: 60%;">
+    </div>
+         <script type="text/javascript">
+         window.onload = function () {
+             CanvasJS.addColorSet("aruba",
+                [
+                "#2F4F4F",
+                "#008080",
+                "#2E8B57",
+                "#3CB371",
+                "#90EE90"
+                ]);
+          var chart = new CanvasJS.Chart("chartContainer3",
+          {
+           theme: "theme1",
+           colorSet: "aruba",
+                                animationEnabled: true,
+           title:{
+            text: "Top 3 Topology vs Other",
+            fontSize: 20
+           },
+           toolTip: {
+            shared: true
+           },
+               data: [
+    
+        {
+            type: "pie",
+            toolTipContent:"{legendText} {y}%",
+            indexLabel: "{label} {y}%",
+            name: "Test file count",
+            legendText: "Test file count",
+            showInLegend: true,
+            dataPoints:[
+            {label: "1sw_0ixia_0link_0host", legendText: "1sw_0ixia_0link_0host", y: 20.90},
+        
+            {label: "1sw_0ixia_1link_1host", legendText: "1sw_0ixia_1link_1host", y: 8.96},
+        
+            {label: "2sw_0ixia_1link_0host", legendText: "2sw_0ixia_1link_0host", y: 5.97},
+        
+            {label: "Other", legendText: "Other", y: 64.18},
+        ]
+          },],
+
+                });
+
+        chart.render();
+    
+          var chart = new CanvasJS.Chart("chartContainer4",
+          {
+           theme: "theme1",
+           colorSet: "aruba",
+                                animationEnabled: true,
+           title:{
+            text: "Top 3 Topology with Most Switches vs Other",
+            fontSize: 20
+           },
+           toolTip: {
+            shared: true
+           },
+               data: [
+    
+        {
+            type: "pie",
+            toolTipContent:"{legendText} {y}%",
+            indexLabel: "{label} {y}%",
+            name: "Switches",
+            legendText: "Switches",
+            showInLegend: true,
+            dataPoints:[
+            {label: "1sw_0ixia_0link_0host", legendText: "1sw_0ixia_0link_0host", y: 13.76},
+        
+            {label: "2sw_0ixia_1link_0host", legendText: "2sw_0ixia_1link_0host", y: 7.86},
+        
+            {label: "2sw_2ixia_5link_0host", legendText: "2sw_2ixia_5link_0host", y: 6.77},
+        
+            {label: "Other", legendText: "Other", y: 71.62},
+        ]
+          },],
+
+                });
+
+        chart.render();
+    
+          var chart = new CanvasJS.Chart("chartContainer5",
+          {
+           theme: "theme1",
+           colorSet: "aruba",
+                                animationEnabled: true,
+           title:{
+            text: "Top 3 Topology with Most Ixia vs Other",
+            fontSize: 20
+           },
+           toolTip: {
+            shared: true
+           },
+               data: [
+    
+        {
+            type: "pie",
+            toolTipContent:"{legendText} {y}%",
+            indexLabel: "{label} {y}%",
+            name: "Ixia",
+            legendText: "Ixia",
+            showInLegend: true,
+            dataPoints:[
+            {label: "1sw_2ixia_2link_1host", legendText: "1sw_2ixia_2link_1host", y: 17.63},
+        
+            {label: "2sw_2ixia_5link_0host", legendText: "2sw_2ixia_5link_0host", y: 17.08},
+        
+            {label: "2sw_2ixia_3link_0host", legendText: "2sw_2ixia_3link_0host", y: 13.77},
+        
+            {label: "Other", legendText: "Other", y: 51.52},
+        ]
+          },],
+
+                });
+
+        chart.render();
+    
+          var chart = new CanvasJS.Chart("chartContainer6",
+          {
+           theme: "theme1",
+           colorSet: "aruba",
+                                animationEnabled: true,
+           title:{
+            text: "Top 3 Topology with Most Host vs Other",
+            fontSize: 20
+           },
+           toolTip: {
+            shared: true
+           },
+               data: [
+    
+        {
+            type: "pie",
+            toolTipContent:"{legendText} {y}%",
+            indexLabel: "{label} {y}%",
+            name: "Host",
+            legendText: "Host",
+            showInLegend: true,
+            dataPoints:[
+            {label: "1sw_0ixia_1link_1host", legendText: "1sw_0ixia_1link_1host", y: 14.44},
+        
+            {label: "1sw_0ixia_2link_2host", legendText: "1sw_0ixia_2link_2host", y: 11.23},
+        
+            {label: "1sw_0ixia_4link_4host", legendText: "1sw_0ixia_4link_4host", y: 9.63},
+        
+            {label: "Other", legendText: "Other", y: 64.71},
+        ]
+          },],
+
+                });
+
+        chart.render();
+    }
+        </script>
+    </div>
+    {% endblock %}
+    
